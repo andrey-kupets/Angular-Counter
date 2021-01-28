@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-result-area',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-area.component.css']
 })
 export class ResultAreaComponent implements OnInit {
+
+  @Input()
+  result = 0;
+
 
   constructor() { }
 

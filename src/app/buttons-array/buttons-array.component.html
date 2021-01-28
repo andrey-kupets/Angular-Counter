@@ -1,4 +1,5 @@
 <div>
-  <button *ngFor="let item of buttonsArray">{{item}}</button>
-  <button>Reset</button>
+  <button *ngFor="let item of buttonsArray" (click)="carryValue(item)">{{item}}</button>
+  <button (click)="carryValue(0)">Reset</button>
 </div>
+

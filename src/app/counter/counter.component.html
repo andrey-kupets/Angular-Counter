@@ -1,5 +1,5 @@
 <div>
-  <app-result-area></app-result-area>
-  <app-buttons-array></app-buttons-array>
+  <app-result-area [result]="result"></app-result-area>
+  <app-buttons-array (surfacing)="setResult($event)"></app-buttons-array>
   <app-input-area></app-input-area>
 </div>

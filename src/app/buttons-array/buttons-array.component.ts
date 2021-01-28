@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, EventEmitter, Output} from '@angular/core';
 import {buttonsData} from '../../data/data';
 
 @Component({
@@ -8,12 +8,20 @@ import {buttonsData} from '../../data/data';
 })
 export class ButtonsArrayComponent implements OnInit {
 
+  @Output()
+  surfacing = new EventEmitter();
+
   buttonsArray = buttonsData;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  carryValue(num): void {
+    this.surfacing.emit(num);
+  }
+
 
 
 }

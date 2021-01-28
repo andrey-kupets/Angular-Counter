@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterComponent implements OnInit {
 
+  result = 0;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  setResult(num): void {
+    let updatedResult = this.result + num;
+    if (updatedResult < 0) {
+      updatedResult = 0;
+    }
+    this.result = updatedResult;
+  }
+
 
 }
