@@ -1,0 +1,14 @@
+.input_area {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  height: 22px;
+  width: 20%;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 2px solid #474747;
+  background: orange;
+}

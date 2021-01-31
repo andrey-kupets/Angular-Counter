@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-input-area',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputAreaComponent implements OnInit {
 
+  @Output()
+  surfacing = new EventEmitter();
+
+  inputNumber: number;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  getNumber(e): void {
+    this.inputNumber = e.target.valueAsNumber;
+  }
+
+  carryValue(num): void {
+    this.surfacing.emit(num);
+    // this.inputNumber = null; // don't know how to zeroing my input's value
+  }
 }

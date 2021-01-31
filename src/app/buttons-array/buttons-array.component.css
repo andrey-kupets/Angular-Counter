@@ -1,0 +1,21 @@
+.btns {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn {
+  height: 22px;
+  width: 40%;
+  margin: 15px auto;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 2px solid #474747;
+}
+
+.btn_reset {
+  height: 20px;
+  width: 100%;
+  background: palegreen;
+}

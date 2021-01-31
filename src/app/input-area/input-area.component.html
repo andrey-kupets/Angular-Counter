@@ -1,4 +1,5 @@
-<div>
+<div class="input_area">
   <label>Enter Number</label>
-  <input type="number">
+  <input type="number" (input)="getNumber($event)">
+  <button class="submit" (click)="carryValue(inputNumber)">submit</button>
 </div>
