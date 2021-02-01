@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "Angular-Counter"
+  "defaultProject": "Angular-Counter",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -23,6 +23,6 @@ export class InputAreaComponent implements OnInit {
 
   carryValue(num): void {
     this.surfacing.emit(num);
-    // this.inputNumber = null; // don't know how to zeroing my input's value
+     this.inputNumber = null; // don't know how to zeroing my input's value
   }
 }
